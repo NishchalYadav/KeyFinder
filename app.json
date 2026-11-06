@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "KeyFinder",
+    "slug": "keyfinder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.keyfinder.app",
+      "permissions": ["android.permission.RECORD_AUDIO", "android.permission.MODIFY_AUDIO_SETTINGS"]
+    },
+    "ios": {
+      "bundleIdentifier": "com.keyfinder.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "KeyFinder listens to music through the microphone to detect its key."
+      }
+    },
+    "plugins": [
+      [
+        "react-native-audio-api",
+        {
+          "iosMicrophonePermission": "KeyFinder listens to music through the microphone to detect its key.",
+          "iosBackgroundMode": false,
+          "androidPermissions": ["android.permission.RECORD_AUDIO", "android.permission.MODIFY_AUDIO_SETTINGS"],
+          "androidForegroundService": false
+        }
+      ],
+      "expo-document-picker"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+
+# Generated native projects (Expo Prebuild)
+android/
+ios/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Android signing credentials
+*.jks
+*.keystore
+android/key.properties
+android/local.properties
+
+# Service account credentials
+*service-account*.json
+
+# Build and test outputs
+coverage/
+*.log
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
